@@ -1,0 +1,10 @@
+<div class="book-l">
+    <h2 class="title">Title</h2>
+    <p class="book-title"><%= @book.title %></p>
+    <h2 class="body">Body</h2>
+    <p class="book-body"><%= @book.body %></p>
+
+    <%= link_to "Edit", edit_booker_path(@book.id) %> |
+    <%= link_to "Back", home_booker_path %> |
+    <%= link_to "destroy", destroy_booker_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+</div>
